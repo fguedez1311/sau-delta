@@ -5,7 +5,62 @@
     padding: 0;
     box-sizing: border-box;
 }
+html{
+    font-size: 62.5%;
+}
 
 body{
     font-family: "Poppins", sans-serif;
+}
+a {
+    text-decoration: none;
+}
+
+
+
+.contenedor {
+    width: 95%;
+    max-width: 120rem;
+    margin: 0 auto;
+}
+.header{
+    background-color: red;
+    color: white;
+
+}
+
+.barra{
+    display: flex;
+    flex-direction: column;
+    height: 250px;
+    outline: 1px solid black;
+    padding-top: 3rem;
+    align-items: center;
+
+}
+.navegacion a{
+    font-size: 1.8rem;
+    display: block;
+    text-align: center;
+}
+.footer{
+    background-color: red;
+    padding: 2.5rem 0;
+}
+.footer p{
+    text-align: center;
+    font-size:1.4rem;
+}
+@media (min-width:700px){
+    .barra{
+        flex-direction: row  ;
+        height: 150px;
+        justify-content: space-between;
+        padding: 0;
+    }
+    .navegacion{
+        display: flex;
+        gap: 1rem;
+        
+    }
 }
